@@ -31,28 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NavigationBar(
-        destinations: const [
-          NavigationDestination(
-            icon: Icon(
-              Icons.home_filled,
-            ),
-            label: "Home",
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.analytics_outlined),
-            label: "Analytics",
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.add_card_outlined),
-            label: "Cards",
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.settings_rounded),
-            label: "Settings",
-          ),
-        ],
-      ),
       body: SingleChildScrollView(
         physics: AlwaysScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
@@ -625,6 +603,29 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: "Home",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.analytics_outlined),
+            label: "Analytics",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.add_card_outlined),
+            label: "Cards",
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.settings_rounded),
+            label: "Settings",
+          ),
+        ],
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
